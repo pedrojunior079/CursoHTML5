@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/web_programming.ico">
+    <style>
+        body{
+            background-color: gray;
+        }
+    </style>
+    
+    <script type="text/javascript">
+       alert("oi");
+    </script>
+    <script src="meu.js"></script>
+    <title>Meu Site</title>
+</head>
+<body>
+    <header>
+        <div>
+           <img src="html5logo.png" style="width: 40px 40px;" 
+           width="156" height="156" alt="HTML5">
+           HTML5 
+        </div>
+    </header>
+    <main>
+        <Form onsubmit="return MinhaAcaoJS(this)">
+          <div>
+            <label for="idtexto">Texto:</label>
+            <input type="text" id="idtexto" name="idtexto"/>
+          </div>
+          <div>
+            <label for="idpassword">Senha:</label>
+            <input type="password" id="idpassword" name="idpassword"/>  
+          </div>
+          <div>
+             <label for="iddate">Data:</label>
+             <input type="date" id="iddate" name="iddate"/>
+          </div>
+          <div>
+             <label for="idfile">Arquivo:</label>
+             <input type="file" id="idfile" name="idfile"/>
+          </div>
+          <div>
+             <label for="idemail">Email:</label>
+             <input type="email" id="idemail" name="idemail"/>
+          </div>
+          <div>
+             <label for="idcheck1">Check 1</label>
+             <input type="checkbox" id="idcheck1" value="Check 1"/>
+             <label for="idcheck2">Check 2</label>
+             <input type="checkbox" id="idcheck2" value="Check 2"/>
+             <label for="idcheck3">Check 3</label>
+             <input type="checkbox" id="idcheck3" value="Check 3"/>
+          </div>
+          <div>
+             <label for="idradio1">Radio 1</label>
+             <input type="radio" id="idradio1" name="idradio" value="Radio 1"/>
+             <label for="idradio2">Radio 2</label>
+             <input type="radio" id="idradio2" name="idradio" value="Radio 2"/>
+             <label for="idradio3">Radio 3</label>
+             <input type="radio" id="idradio3" name="idradio" value="Radio 3"/>
+          </div>
+          <div>
+             <label for="idtextarea">Caixa de Texto:</label>
+             <textarea name="idtexto" id="idtexto" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+             <select name="selecao">
+                 <option value="html">HTML5</option>
+                 <option value="css">CSS3</option>
+                 <option value="javascript">Javascript</option>
+             </select>
+          </div>
+          <input type="button" onclick="alert('Oi!')" value="Botão"/>
+          <input type="submit" value="Enviar Form"/>
+          <input type="reset" value="Limpar"/> 
+        </Form>
+     </main>  
+</body>
+</html>
